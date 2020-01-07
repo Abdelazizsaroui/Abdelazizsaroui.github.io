@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Olympiades Mines Rabat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Olympiades Mines Rabat 2019">
+    <meta name="author" content="Abdelaziz Saroui">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Fjalla+One:400|Noto+Sans:400&amp;subset=latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+                
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow bg-primary"><a class="navbar-brand d-lg-none" href="#"><img src="placeholder/logo-white-small.png" width="38"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-02"><img src="placeholder/icon.svg" width="30"></button>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navigations-02">
+          <div class="row w-100">
+            <div class="col-4 pl-lg-0">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">OMR</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Historique</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Activités</a></li>
+              </ul>
+            </div>
+            <div class="col-4 navbar-nav text-center pr-0 d-none d-lg-block"><a class="navbar-brand" href="#"><img src="placeholder/logo-white-small.png" width="38" onmouseover="hover(this);" onmouseout="unhover(this);"></a></div>
+            <div class="col-4 pr-lg-0">
+              <ul class="navbar-nav justify-content-end">
+                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+                
+      <section class="py-5" style="background: url('main-image.jpg'); ">
+        <div class="container">
+          	<h1> 14, 15 et 16 Février</h1>
+          <div class="row">
+            <div class="col-md-6 order-2 order-md-1"><img class="img-fluid mt-3 mt-md-0 " src="placeholder/logo-blue-big.png" width="300" alt=""></div>
+            <div class="col-md-6 my-auto text-center order-1 order-md-2">
+              <h2 class="mb-4 shadow-lg text-danger rounded p-3" style="font-size: 60px;">Le sport au coeur de la révolution digitale</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section class="py-5 bg-primary">
+        <div class="container">
+          <h2 class="mb-5 text-center text-light" style="font-size: 50px;">
+          	<span id="nhar" style="color:#F4C300"></span><sup style="font-size: 15px">Jours</sup> 
+          	<span id="sa3a" style="color: #009F3D"></span><sup style="font-size: 15px">Heures</sup> 
+          	<span id="d9i9a" style="color: #DF0024"></span><sup style="font-size: 15px">Minutes</sup>
+          	<span id="taniya"></span><sup style="font-size: 15px">Secondes</sup>
+          </h2>
+          <div class="embed-responsive embed-responsive-16by9 mx-auto z-depth-4 rounded">
+            <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/VEJrbuTEFFs" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+                
+      <footer class="py-5">
+        <div class="container text-center"><img src="placeholder/logo-blue-small.png" alt="" height="40">
+          <h2 class="my-3"><a href="#">OMR 2020</a></h2>
+          <p class="lead">Olympiades 2020 de l'école nationale supérieure des mines de Rabat</p>
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#">ENIM</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">OMR</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">SPONSORS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FACEBOOK</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">INSTAGRAM</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap-material-design.min.js"></script>
+    <script>
+        $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+        function hover(element){
+        	element.setAttribute('src', 'placeholder/logohover.png');
+        }
+        function unhover(element){
+        	element.setAttribute('src', 'placeholder/logo-white-small.png');
+        }
+    </script>
+    <script>
+
+var countDownDate = new Date("Feb 14, 2020 08:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("nhar").innerHTML = potato(days);
+  document.getElementById("sa3a").innerHTML = potato(hours);
+  document.getElementById("d9i9a").innerHTML = potato(minutes);
+  document.getElementById("taniya").innerHTML = potato(seconds);
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("potato").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+function potato(dec){
+    x = (dec >>> 0).toString(2);
+   	x = "0".repeat(6 - x.length)+x
+    return x;
+}  
+
+</script>
+  </body>
+</html>
+
