@@ -8,13 +8,25 @@
     <meta name="author" content="Abdelaziz Saroui">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Fjalla+One:400|Noto+Sans:400&amp;subset=latin">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="icon" href="favicon.ico">
+    <style type="text/css">
+    	.nav-link {
+    		font-family: "Roboto", sans-serif;
+    		text-transform: lowercase;
+    		text-transform: capitalize;
+    	}
+    	#count {
+    		font-family: 'Megrim', cursive;
+    		font-size: 100px;
+    	}
+    </style>
   </head>
   <body>
     <div class="container-fluid px-0">
                 
-      <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow bg-primary"><a class="navbar-brand d-lg-none" href="#"><img src="placeholder/logo-white-small.png" width="38"></a>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary shadow-none"><a class="navbar-brand d-lg-none" href="#"><img src="placeholder/logo-white-small.png" width="38"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-02"><img src="placeholder/icon.svg" width="30"></button>
         <div class="collapse navbar-collapse justify-content-md-center" id="navigations-02">
           <div class="row w-100">
@@ -25,10 +37,10 @@
                 <li class="nav-item"><a class="nav-link" href="#">Activités</a></li>
               </ul>
             </div>
-            <div class="col-4 navbar-nav text-center pr-0 d-none d-lg-block"><a class="navbar-brand" href="#"><img src="placeholder/logo-white-small.png" width="38" onmouseover="hover(this);" onmouseout="unhover(this);"></a></div>
+            <div class="col-4 navbar-nav text-center pr-0 d-none d-lg-block"><a class="navbar-brand" href="index.html"><img src="placeholder/logo-white-small.png" width="38" onmouseover="hover(this);" onmouseout="unhover(this);"></a></div>
             <div class="col-4 pr-lg-0">
               <ul class="navbar-nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Sponsors</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
               </ul>
@@ -36,25 +48,28 @@
           </div>
         </div>
       </nav>
+      <div  class="text-center bg-primary text-light py-2">
+      	<h2>OMR 2020 : Le sport au coeur de la révolution digitale</h2>
+      </div>
                 
       <section class="py-5" style="background: url('main-image.jpg'); ">
         <div class="container">
-          	<h1> 14, 15 et 16 Février</h1>
+          	<h1> <span style="color:#F4C300">14</span>, <span style="color: #009F3D">15</span> et <span style="color: #DF0024">16</span> Février</h1>
           <div class="row">
-            <div class="col-md-6 order-2 order-md-1"><img class="img-fluid mt-3 mt-md-0 " src="placeholder/logo-blue-big.png" width="300" alt=""></div>
-            <div class="col-md-6 my-auto text-center order-1 order-md-2">
-              <h2 class="mb-4 shadow-lg text-danger rounded p-3" style="font-size: 60px;">Le sport au coeur de la révolution digitale</h2>
+            <div class="col-md-4 order-2 order-md-1"><img class="img-fluid mt-3 mt-md-0 " src="placeholder/logo-blue-big.png" width="280" alt=""></div>
+            <div class="col-md-8 my-auto text-center order-1 order-md-2">
+              
             </div>
           </div>
         </div>
       </section>
                 
-      <section class="py-5 bg-primary">
+      <section class="py-5 bg-primary text-center">
         <div class="container">
-          <h2 class="mb-5 text-center text-light" style="font-size: 50px;">
-          	<span id="nhar" style="color:#F4C300"></span><sup style="font-size: 15px">Jours</sup> 
-          	<span id="sa3a" style="color: #009F3D"></span><sup style="font-size: 15px">Heures</sup> 
-          	<span id="d9i9a" style="color: #DF0024"></span><sup style="font-size: 15px">Minutes</sup>
+          <h2 id="count" class="mb-5 text-center text-light">
+          	<span id="nhar"></span><sup style="font-size: 15px">Jours</sup> 
+          	<span id="sa3a"></span><sup style="font-size: 15px">Heures</sup> 
+          	<span id="d9i9a"></span><sup style="font-size: 15px">Minutes</sup>
           	<span id="taniya"></span><sup style="font-size: 15px">Secondes</sup>
           </h2>
           <div class="embed-responsive embed-responsive-16by9 mx-auto z-depth-4 rounded">
@@ -68,11 +83,9 @@
           <h2 class="my-3"><a href="#">OMR 2020</a></h2>
           <p class="lead">Olympiades 2020 de l'école nationale supérieure des mines de Rabat</p>
           <ul class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="#">ENIM</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">OMR</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">SPONSORS</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FACEBOOK</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">INSTAGRAM</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="placeholder/facebook.svg" width="40"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="placeholder/youtube.svg" width="40"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="placeholder/instagram.svg" width="40"></a></li>
           </ul>
         </div>
       </footer>
@@ -88,6 +101,7 @@
         function unhover(element){
         	element.setAttribute('src', 'placeholder/logo-white-small.png');
         }
+        
     </script>
     <script>
 
@@ -104,22 +118,16 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("nhar").innerHTML = potato(days);
-  document.getElementById("sa3a").innerHTML = potato(hours);
-  document.getElementById("d9i9a").innerHTML = potato(minutes);
-  document.getElementById("taniya").innerHTML = potato(seconds);
+  document.getElementById("nhar").innerHTML = days;
+  document.getElementById("sa3a").innerHTML = hours;
+  document.getElementById("d9i9a").innerHTML = minutes;
+  document.getElementById("taniya").innerHTML = seconds;
     
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("potato").innerHTML = "EXPIRED";
+    document.getElementById("potato").innerHTML = "";
   }
 }, 1000);
-
-function potato(dec){
-    x = (dec >>> 0).toString(2);
-   	x = "0".repeat(6 - x.length)+x
-    return x;
-}  
 
 </script>
   </body>
