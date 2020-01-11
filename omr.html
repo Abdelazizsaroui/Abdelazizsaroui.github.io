@@ -16,10 +16,6 @@
     		text-transform: lowercase;
     		text-transform: capitalize;
     	}
-    	sub {
-    		font-size: 14px;
-    		color: #EF3125;
-    	}
     </style>
   </head>
   <body>
@@ -47,38 +43,26 @@
           </div>
         </div>
       </nav>
-                
-      <section class="py-5" style="background: url('main-image.jpg'); ">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 order-2 order-md-1 text-center">
-            <h1> <span style="color:#F4C300">14</span>, <span style="color: #009F3D">15</span> et <span style="color: #DF0024">16</span> Février</h1>
-            <img class="img-fluid mt-3 mt-md-0 " src="placeholder/logo-blue-big.png" width="240" alt=""></div>
-            <div class="col-md-8 my-auto text-center order-1 order-md-2">
-              
+
+      <section>
+        <div class="container-fluid shadow">
+          <article class="row">
+            <nav class="col-sm-4 bg-primary text-center p-4 text-light">
+              <img src="placeholder/logo-white-big.png" width="160">
+              <p class="pt-3  text-justify" style="font-size: 14px;"><em> " Le comité sportif est un comité convivial où le travail d'équipe a toujours été la clé de la réussite de ses événements. Être président n'a jamais été un but en soi, mais la passion du sport qui m'a mené à m'engager dans ce club, m'a énormément aidé à me construire et changer la vision des choses. Il m’a paru donc légitime de consacrer un peu de mon temps en faveur de ce comité. Le succès flagrant qu’a connu la 14ème édition de notre événement phare qui est l’Olympiades Mines Rabat, n’est pas venu du hasard. En effet, c’est un long travail acharné de tous les membres du comité qui étaient déterminés et persuadés et qui donc sacrifié de leur temps et leurs petits plaisirs juste pour la réussite de cet événement. C'est grâce à la mobilisation de tous, à l'engagement de nos partenaires publics et privés que nous arrivons chaque année à l'excellence. Le comité sport a donc le grand honneur que vous l’accompagnez tout au long de cette aventure, rejoignez-nous et sculptez votre nom dans cette manifestation exclusive. "</em> </p> <h6> Mohamed Boualam - Président du comité</h6>
+            </nav>
+            <div class="col-sm-8 p-5">
+              <h1 class="mb-4">Olympiades Mines Rabat 2020</h1>
+              <h3 class="mb-3">La 14<sup>ème</sup> édition: le 14, le 15 et le 16 Février</h3>
+              <p>Dans le cadre des activités para-pédagogiques, le comité SPORT de l'Ecole Nationale supérieure des Mines de Rabat organise chaque année l'Olympiades Mines Rabat qui est une grande manifestation sportive, culturelle et artistique qui réunit les étudiants afin de se divertir et de s’épanouir. En tous lieux, sur les pelouses, dans les classes et les Halls, se déroule plusieurs activités telles que des matchs de football, de volleyball, de basketball , de Ping-pong ainsi que du paint-ball des jeux d'échecs et du gaming .Un effectif de plus de <strong>7000 étudiants</strong> , issus de <strong>60 grandes écoles</strong> d’ingénieurs ou de commerce , venus de tout le Maroc ,s’affronte chaque année dans les différentes disciplines dans un cadre fraternel.</p> <p> Avec plus de challenges, l’Olympiades Mines Rabat reviendra cette année encore pour la 14éme édition, qui se tiendra le 14, le 15 et le 16 Février 2020 à l’Ecole Nationale Supérieure des Mines de Rabat. </p>
+              <h3 class="mb-3">Le sport au coeur de la révolution digitale</h3>
+              <p>Le digital a révolutionné le monde entier. Cette révolution - qui a débuté depuis des années touche a plusieurs secteurs. Comment un secteur aussi dynamique que le sport pouvait y échapper ? La communication digitale a permis aux sportifs de renommée mondiale d'être connus par de simples profanes. Les évènements sportifs est une occasions où plusieurs exposants, qui sont à la recherche d'une visibilité et notoriété, se précipitent à y participer afin de bénéficier de ces retombées médiatiques. Le digital nous a initié a une nouvelle forme du sport, appelée le e-sport. Cette nouvelle dimension nous entraîne vers un monde virtuel, le monde du gaming et des jeux vidéos. Le digital est une opportunité à saisir pour le secteur du sport et son développement.</p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
-                
-      <section class="py-5 bg-primary">
-        <div class="container text-light text-center">
-        <h1 class="mb-5">OMR 2020 : Le sport au coeur de la révolution digitale</h1>
-          <div class="row mb-5">
-          	<div class="col-md-2"></div>
-          	<div class="col-md-2 bg-primary text-light rounded border border-light pt-1"><h1 id="nhar"></h1></div>
-          	<div class="col-md-2 bg-primary text-light rounded border border-light pt-1"><h1 id="sa3a"></h1></div>
-          	<div class="col-md-2 bg-primary text-light rounded border border-light pt-1"><h1 id="d9i9a"></h1></div>
-          	<div class="col-md-2 bg-primary text-light rounded border border-light pt-1"><h1 id="taniya"></h1></div>
-          	<div class="col-md-2"></div>
-          </div>
-          <div class="embed-responsive embed-responsive-16by9 mx-auto z-depth-4 rounded">
-            <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/VEJrbuTEFFs" allowfullscreen></iframe>
-          </div>
-        </div>
-      </section>
-                
-      <footer class="pt-5">
+
+    <footer class="pt-5">
         <div class="container text-center"><img src="placeholder/logo-blue-small.png" alt="" height="40">
           <h2 class="my-3"><a href="index.html">OMR 2020</a></h2>
           <p class="lead">Olympiades 2020 de l'école nationale supérieure des mines de Rabat</p>
@@ -98,40 +82,12 @@
     <script>
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
         function hover(element){
-        	element.setAttribute('src', 'placeholder/logohover.png');
+          element.setAttribute('src', 'placeholder/logohover.png');
         }
         function unhover(element){
-        	element.setAttribute('src', 'placeholder/logo-white-small.png');
+          element.setAttribute('src', 'placeholder/logo-white-small.png');
         }
         
     </script>
-    <script>
-
-var countDownDate = new Date("Feb 14, 2020 08:00:00").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-
-  var distance = countDownDate - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("nhar").innerHTML = days + "<sub>Jours</sub>";
-  document.getElementById("sa3a").innerHTML = hours + "<sub>Heures</sub>";
-  document.getElementById("d9i9a").innerHTML = minutes + "<sub>Minutes</sub>";
-  document.getElementById("taniya").innerHTML = seconds + "<sub>Secondes</sub>";
-    
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("potato").innerHTML = "";
-  }
-}, 1000);
-
-</script>
-  </body>
+</body>
 </html>
-
