@@ -16,12 +16,15 @@
         text-transform: lowercase;
         text-transform: capitalize;
       }
+      .embed-responsive {
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid px-0">
                 
-      <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow bg-primary"><a class="navbar-brand d-lg-none" href="index.html"><img src="placeholder/logo-white-small.png" width="38" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary shadow"><a class="navbar-brand d-lg-none" href="index.html"><img src="placeholder/logo-white-small.png" width="38" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigations-02"><img src="placeholder/icon.svg" width="30"></button>
         <div class="collapse navbar-collapse justify-content-md-center" id="navigations-02">
           <div class="row w-100">
@@ -44,42 +47,27 @@
         </div>
       </nav>
 
-      <section class="">
-        <div class="container-fluid px-0 text-center">
-          <div class="card shadow rounded"><img class="card-img" src="team-min.jpg" alt="">
-          </div>
-        </div>
-      </section>
-                
-      <section class="py-5 bg-primary shadow">
+    <section class="py-5 bg-primary">
         <div class="container text-center text-light">
-          <h1>Team</h1>
-          <p class="mb-5">L'équipe Olympiades Mines Rabat 2020</p>
-          <div class="row mb-4">
-          	<div class="col-md-3 mb-4"></div>
-            <div class="col-md-3 mb-4">
-            <img class="mb-3 rounded-circle shadow-lg" src="boualam.jpg" height="140" alt="">
-              <h5 class="mb-0">Mohamed Boualam</h5><small>Président du comité</small>
-            </div>
-            <div class="col-md-3 mb-4">
-            	<img class="mb-2 rounded-circle shadow-lg" src="hafsa.jpg" height="140" alt="">
-              <h5 class="mb-0">Hafsa Rassou</h5><small>Secrétaire générale</small>
-            </div>
-          	<div class="col-md-3 mb-4"></div>
+          <h2>OMR 2018 12<sup>ème</sup> édition</h2>
+          <div class="embed-responsive embed-responsive-16by9 mx-auto shadow-lg border">
+            <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/UPP-KjEx1SM" allowfullscreen></iframe>
           </div>
-          <div class="row">
-            <div class="col-md-4 mb-4"><img class="mb-3 rounded-circle shadow-lg" src="hajar.jpg" height="140" alt="">
-              <h5 class="mb-0">Hajar Habibi</h5><small>Responsable Communication</small>
-            </div>
-            <div class="col-md-4 mb-4"><img class="mb-3 rounded-circle shadow-lg" src="yassine.jpg" height="140" alt="">
-              <h5 class="mb-0">Yassine Mezgour</h5><small>Responsable Conception</small>
-            </div>
-            <div class="col-md-4 mb-4"><img class="mb-3 rounded-circle shadow-lg" src="kaoutar.jpg" height="140" alt="">
-              <h5 class="mb-0">Kaoutar Terkouzi</h5><small>Responsable Sponsoring</small>
-            </div>
+          <h2 class="mt-5">OMR 2017 11<sup>ème</sup> édition</h2>
+          <div class="embed-responsive embed-responsive-16by9 mx-auto shadow-lg border">
+            <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/X_rcF8GQU8U" allowfullscreen></iframe>
+          </div>
+          <h2 class="mt-5">OMR 2016 10<sup>ème</sup> édition</h2>
+          <div class="embed-responsive embed-responsive-16by9 mx-auto shadow-lg border">
+            <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/YfycPxjWAug" allowfullscreen></iframe>
+          </div>
+          <h2 class="mt-5">Mini Jounrée 2019</h2>
+          <div class="embed-responsive embed-responsive-16by9 mx-auto shadow-lg border">
+            <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/giF4GmDmNH8" allowfullscreen></iframe>
           </div>
         </div>
       </section>
+
     <footer class="pt-5 pb-3">
         <div class="container text-center"><img src="placeholder/logo-blue-small.png" alt="" height="40">
           <h2 class="my-3"><a href="index.html">OMR 2020</a></h2>
@@ -131,7 +119,7 @@
         function unhover(element){
           element.setAttribute('src', 'placeholder/logo-white-small.png');
         }
+        
     </script>
-  </body>
+</body>
 </html>
-

@@ -17,9 +17,11 @@
     		text-transform: capitalize;
     	}
     	sub {
-    		font-size: 14px;
-    		color: #EF3125;
+    		font-size: 12px;
     	}
+      .embed-responsive {
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
@@ -32,15 +34,15 @@
             <div class="col-4 pl-lg-0">
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="omr.html">OMR</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Historique</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Activités</a></li>
+                <li class="nav-item"><a class="nav-link" href="historique.html">Historique</a></li>
+                <li class="nav-item"><a class="nav-link" type="button" data-toggle="modal" data-target=".activities" >Activités</a></li>
               </ul>
             </div>
             <div class="col-4 navbar-nav text-center pr-0 d-none d-lg-block"><a class="navbar-brand" href="index.html"><img src="placeholder/logo-white-small.png" width="38" onmouseover="hover(this);" onmouseout="unhover(this);"></a></div>
             <div class="col-4 pr-lg-0">
               <ul class="navbar-nav justify-content-end">
                 <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sponsors</a></li>
+                <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
                 <li class="nav-item"><a class="nav-link" type="button" data-toggle="modal" data-target="#contact">Contact</a></li>
               </ul>
             </div>
@@ -63,7 +65,7 @@
                 
       <section class="py-5 bg-primary">
         <div class="container text-light text-center">
-        <h1 class="mb-5">OMR 2020 : Le sport au coeur de la révolution digitale</h1>
+        <h1 class="mb-5">OMR 2020 : Le <span class="text-danger">sport</span> au coeur de la révolution <span class="text-danger">digitale</span></h1>
           <div class="row mb-5">
           	<div class="col-md-2"></div>
           	<div class="col-md-2 bg-primary text-light rounded border border-light pt-1"><h1 id="nhar"></h1></div>
@@ -72,23 +74,33 @@
           	<div class="col-md-2 bg-primary text-light rounded border border-light pt-1"><h1 id="taniya"></h1></div>
           	<div class="col-md-2"></div>
           </div>
-          <div class="embed-responsive embed-responsive-16by9 mx-auto z-depth-4 rounded">
+          <div class="embed-responsive embed-responsive-16by9 mx-auto shadow-lg ">
             <iframe class="embed-responsive-ite" src="https://www.youtube.com/embed/VEJrbuTEFFs" allowfullscreen></iframe>
           </div>
         </div>
       </section>
                 
-      <footer class="py-5">
+      <footer class="pt-5 pb-1">
         <div class="container text-center"><img src="placeholder/logo-blue-small.png" alt="" height="40">
           <h2 class="my-3"><a href="index.html">OMR 2020</a></h2>
-          <p class="lead">14<sup>ème</sup> édition des olympiades de Mines Rabat</p>
+          <p class="lead">14<sup>ème</sup> édition des Olympiades de Mines Rabat</p>
           <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/pg/Comitesport.ENSMR"><img src="placeholder/facebook.svg" width="40"></a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCkBVzgjtbXaN_5XWfOol91g"><img src="placeholder/youtube.svg" width="40"></a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/olympiadesminesrabat"><img src="placeholder/instagram.svg" width="40"></a></li>
           </ul>
+          <hr class="mb-0">
+          <small style="font-size: 9px;" class="text-muted p-0">Design & Dev : <a class="text-muted" href="https://facebook.com/stallmanx">Abdelaziz Saroui</a></small>
         </div>
       </footer>
+
+      <div class="modal fade activities" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content p-2 text-center">
+            <p>Les activités vont être publiées prochainement</p>
+          </div>
+        </div>
+      </div>
       
       <div class="modal fade bg-primary" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -142,10 +154,6 @@ var x = setInterval(function() {
   document.getElementById("d9i9a").innerHTML = minutes + "<sub>Minutes</sub>";
   document.getElementById("taniya").innerHTML = seconds + "<sub>Secondes</sub>";
     
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("potato").innerHTML = "";
-  }
 }, 1000);
 
 </script>
